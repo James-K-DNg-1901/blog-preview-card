@@ -1,0 +1,128 @@
+:root {
+    --Yellow: hsl(47, 88%, 63%);
+    --White: hsl(0, 0%, 100%);
+    --Grey: hsl(0, 0%, 50%);
+    --Black: hsl(0, 0%, 7%);
+}
+
+body {
+    min-height: 100vh;
+    background-color: var(--Yellow);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Figtree', sans-serif;
+}
+
+.card-wrapper {
+    background-color: var(--White);
+    max-width: 25rem;
+    height: auto;
+    padding: 2rem;
+    border: 1px solid black;
+    border-radius: 2em;
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    align-items: start;
+    gap: 0em;
+    box-shadow: 15px 15px 0px 0px var(--Black);
+}
+
+.content-img {
+    background-image: url(./assets/images/illustration-article.svg);
+    background-size: cover;
+    width: 25rem;
+    height: 15rem;
+    border-radius: 1em;
+}
+
+.flag {
+    background-color: var(--Yellow);
+    width: 5.5em;
+    height: 2em;
+    border-radius: 0.2em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 800;
+    margin-top: 2em
+}
+
+.date {
+    color: var(--Grey);
+    margin-bottom: 0;
+}
+
+.title {
+    font-size: 1.7em;
+    cursor: pointer;
+}
+.title:hover {
+    color: var(--Yellow);
+}
+
+.discript {
+    color: var(--Grey);
+    word-spacing: 3px;
+    letter-spacing: 1px;
+    line-height: 1.4;
+}
+
+.avatar-holder {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2em;
+}
+
+.avatar-holder img {
+    width: 3em;
+    border: 2px solid var(--Yellow);
+    border-radius: 2em;
+}
+
+.avatar-holder h2 {
+    font-size: 1.2em;
+}
+
+@media (max-width: 500px) {
+    .card-wrapper {
+        width: 16.5rem;
+        box-shadow: 10px 10px 0px 0px var(--Black);
+    }
+
+    .content-img {
+        background-size: 100%;
+        width: 16.5rem;
+        height: 9.5rem;
+    }
+
+    .flag {
+        width: 5.5em;
+        height: 2em;
+        margin-top: 1.2em
+    }
+
+    .date {
+        font-size: 11px;
+    }
+    
+    .title {
+        font-size: 1.4em;
+    }
+    
+    .discript {
+        font-size: 11px;
+        word-spacing: 1px;
+        line-height: 1.4;
+    }
+    
+    .avatar-holder {
+        gap: 1em;
+    }
+    
+    .avatar-holder h2 {
+        font-size: 1em;
+    }
+}
